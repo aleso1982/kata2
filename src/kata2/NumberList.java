@@ -1,4 +1,4 @@
-package kata2.numberlist;
+package kata2;
 
 import java.util.ArrayList;
 
@@ -7,7 +7,7 @@ public class NumberList {
     private static ArrayList<NumberAndFrecuency> arrayList;
 
     public NumberList() {
-        arrayList = new ArrayList<>();
+        arrayList = new ArrayList<NumberAndFrecuency>();
     }
 
     public void putNumber(int number) {

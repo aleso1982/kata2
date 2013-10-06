@@ -1,4 +1,4 @@
-package kata2.numberlist;
+package kata2;
 
 import java.util.ArrayList;
 
