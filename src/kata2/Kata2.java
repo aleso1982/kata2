@@ -10,7 +10,8 @@ public class Kata2 {
             a.putNumber(array[i]);
         }
 
-        System.out.println("Numero con mayor frecuencia: " + a.mostFrecuency());
+        System.out.println("Numero con mayor frecuencia: " + a.mostFrecuency()[0]);
+        System.out.println("Su frecuencia: " + a.mostFrecuency()[1]);
 
     }
 }

@@ -20,16 +20,18 @@ public class NumberList {
         arrayList.add(new NumberAndFrecuency(number));
     }
     
-    public int mostFrecuency (){
-        int mostN = 0;
-        int mostF = 0;
+    public int [] mostFrecuency (){
+        int [] number;
+        number = new int[2];
         
         for (NumberAndFrecuency numberAndFrecuency : arrayList) {
-            if (numberAndFrecuency.getFrecuency() >= mostF){
-                mostN = numberAndFrecuency.getNumber();
-                mostF = numberAndFrecuency.getFrecuency();
+            if (numberAndFrecuency.getFrecuency() >= number[1]){
+                number [0] = numberAndFrecuency.getNumber();
+                number[1] = numberAndFrecuency.getFrecuency();
+                //mostN = numberAndFrecuency.getNumber();
+                //mostF = numberAndFrecuency.getFrecuency();
             }
         }
-        return mostN;
+        return number;
     }
 }
